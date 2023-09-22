@@ -5,11 +5,6 @@ namespace copilot;
 
 public interface IDeckOfCardsApi
 {
-    [Get("/new/shuffle/?deck_count=1")]
-    Task<Deck> Shuffle();
-
-    [Get("/{deckId}/draw/?count=1")]
-    Task<DrawResponse> Draw(string deckId);
 }
 
 public class Card
