@@ -27,6 +27,7 @@ public class BlackJack
             return $"You lost. Your score is {_drawnCards.Sum(card => card.Value)}";
         }
 
+        //return curently drawn cards and score
         return $"Current drawn cards: {string.Join(", ", _drawnCards.Select(card => card.Card))}, total value: {_drawnCards.Sum(card => card.Value)}";
     }
 
